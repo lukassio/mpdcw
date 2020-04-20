@@ -1,0 +1,7 @@
+<resources>
+    <!-- Luke Pringle - S1624789 -->
+    <string name="app_name">LJC</string>
+	<string name="app_label">Search</string>
+    <string name="search_hint">Search Here</string>
+    <string name="search_view">Enter</string>
+</resources>

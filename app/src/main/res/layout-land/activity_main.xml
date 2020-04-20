@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Luke Pringle - S1624789 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colourBackground">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo"
+                    android:id="@+id/imageView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/cIButton"
+                    android:layout_alignEnd="@+id/pRButton">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Luke's Journey Checker"
+                    android:textColor="#00ffffff"
+                    android:textSize="35sp"
+                    android:id="@+id/textView"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please Choose An Option"
+                    android:textColor="#3052b6"
+                    android:textSize="17sp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/cIButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp"
+                    android:layout_marginTop="25dp"
+                    android:elevation="0dp"
+                    android:text="Current Incidents"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_border"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:id="@+id/pRButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border"
+                    android:text="Planned Roadworks"
+                    android:textColor="@android:color/white"
+                    android:layout_alignTop="@+id/cIButton"
+                    android:layout_toEndOf="@+id/cIButton"
+                    android:layout_marginStart="61dp" />
+
+            </RelativeLayout>
+</RelativeLayout>
